@@ -15,3 +15,5 @@ https://api.github.com/repos/SangWoo-So/AppSupport/releases{/id}
 ID List
 
 Banapresso:70597200
+
+BanapressoTest:
