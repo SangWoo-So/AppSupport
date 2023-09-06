@@ -16,4 +16,4 @@ ID List
 
 Banapresso:70597200
 
-BanapressoTest:52030111 ( 230905 추가 )
+BanapressoTest:119895262 ( 230905 추가 )
