@@ -1,0 +1,227 @@
+{
+  "_DESC_": {
+    "key": {
+      "nLevel": 0,
+      "desc": "설명"
+    }
+  },
+  "3.00.40": {
+    "range": ">=",
+    "payPromotion": {
+      "nLevel": 1,
+      "desc": "[3.00.40 >=] 251016 변경되는 프로모션 멘트 처리",
+      "promotions": [
+        {
+          "type": "TOSS",
+          "charge": {
+            "desc": "토스 충전 프로모션",
+            "dtStart": "2025-10-16 00:00:00",
+            "dtStart1": "2025-10-20 00:00:00",
+            "dtEnd": "2025-11-30 23:59:59",
+            "dtEnd1": "2025-11-14 23:59:59",
+            "sMent": "3만원 이상 충전 시\r토스포인트 3천점 증정! (추첨)",
+            "nAmt": 30000,
+            "sSuccess": "토스페이 3천 포인트 응모 및\r포인트 충전이 완료되었습니다."
+          },
+          "pay": {
+            "desc": "토스 결제 프로모션",
+            "dtStart": "2025-10-16 00:00:00",
+            "dtStart1": "2025-10-20 00:00:00",
+            "dtEnd": "2025-11-30 23:59:59",
+            "dtEnd1": "2025-10-31 23:59:59",
+            "sMent": "*5천원 이상 결제 시 2% 할인(선착순)"
+          }
+        },
+        {
+          "type": "NAVER",
+          "pay": {
+            "desc": "네이버 결제 프로모션",
+            "dtStart": "2025-10-16 00:00:00",
+            "dtStart1": "2025-10-20 00:00:00",
+            "dtEnd": "2025-10-31 23:59:59",
+            "sMent": "[TEST][NAVER]*5천원 이상 결제 시 2% 할인(선착순)"
+          }
+        },
+        {
+          "type": "KAKAO",
+          "pay": {
+            "desc": "카카오 결제 프로모션",
+            "dtStart": "2025-10-16 00:00:00",
+            "dtStart1": "2025-10-20 00:00:00",
+            "dtEnd": "2025-10-31 23:59:59",
+            "sMent": "[TEST][KAKAO]*5천원 이상 결제 시 2% 할인(선착순)"
+          }
+        }
+      ]
+    }
+  },
+  "3.00.38": {
+    "range": ">=",
+    "deliveryPayTypeLimit": {
+      "nLevel": 1,
+      "desc": "[3.00.38 >=] 250923 배달주문 결제방법 제한 처리",
+      "desc2": "뚝섬역점1770 https://banaplernd.atlassian.net/browse/BPSW-975",
+      "desc3": "enum [0:바로 결제, 1:현장 현금, 2:현장 카드]",
+      "shopList": {
+        "1710": [
+          0
+        ]
+      }
+    }
+  },
+  "3.00.32": {
+    "range": ">=",
+    "usePaysCouponMinusDiscount": {
+      "nLevel": 1,
+      "desc": "[3.00.32 >=] 250821 제휴사 쿠폰 차액 할인 적용",
+      "desc2": "기존에 bUseMinusDiscount 썼으나 버그있어서 새로운 키 생성",
+      "exceptionNameList": "아메리카노,시그니처아메리카노,디카페인 아메리카노,바나리카노,디카페인 바나리카노"
+    }
+  },
+  "3.00.31": {
+    "range": ">=<",
+    "WebViewHeaderHidden": {
+      "nLevel": 1,
+      "desc": "[3.00.31 >=<] 250702 특정url 웹뷰 헤더 hidden 처리",
+      "desc2": "url은 .hasPrefix()",
+      "prefixes": [
+        "https://banapresso.com/view/event/farm"
+      ],
+      "__prefixes": [
+        "https://banapresso.com/view/event/farm",
+        "https://banapresso.com/view/badge/main"
+      ]
+    }
+  },
+  "2.03.73": {
+    "bUseGiveGiftMainMenu": {
+      "nLevel": 1,
+      "desc": "[ v2.03.73(1) >= ] 메인메뉴 선물하기 표시 여부",
+      "link": ""
+    }
+  },
+  "2.03.71": {
+    "bUseGiveGift": {
+      "nLevel": 0,
+      "desc": "[ v2.03.71(2) >= ] 포인트 > 상품권 선물하기 기능 표시"
+    }
+  },
+  "2.03.47": {
+    "bNotUseAffiliateCoupon": {
+      "nLevel": 0,
+      "desc": "[ v2.03.46 >= ] 제휴사 쿠폰 기능 사용 여부"
+    },
+    "bNotUseBonusPayPoint": {
+      "nLevel": 0,
+      "desc": "[ v2.03.46 >= ] 충전포인트(보너스) 기능 사용 여부"
+    },
+    "bNotUseShotMent": {
+      "nLevel": 0,
+      "desc": "[ v2.03.46 >= ] '샷양' 이 포함된 옵션에 문구 추가"
+    },
+    "bUseMinusDiscount": {
+      "nLevel": 0,
+      "desc": "[ v2.03.47 >= ] 쿠폰차액 적용 여부",
+      "regDttm": "230905"
+    }
+  },
+  "COMMON": {
+    "WebViewHeaderHidden": {
+      "nLevel": 1,
+      "desc": "[3.00.21 >=] 250702 특정url 웹뷰 헤더 hidden 처리",
+      "desc2": "url은 .hasPrefix()",
+      "prefixes": [
+        "https://banapresso.com/view/event/farm"
+      ]
+    },
+    "PointChargeCardLimit": {
+      "nLevel": 1,
+      "desc": "[ 2.03.51 >= ] 231023 ",
+      "desc2": "카드사별 포인트(환금성 상품권) 결제금액 제한 정책",
+      "url_": "https://raw.githubusercontent.com/SangWoo-So/AppSupport/main/Banapresso/PointChargeCardLimit.json",
+      "url3": "https://raw.githubusercontent.com/SangWoo-So/AppSupport/main/Banapresso/PointChargeCardLimit_TEST.json",
+      "url": "https://raw.githubusercontent.com/SangWoo-So/AppSupport/main/Banapresso/PointChargeCardLimit_TEST2.json",
+      "url6": "https://raw.githubusercontent.com/SangWoo-So/AppSupport/main/Banapresso/PointChargeCardLimit_Test3.json"
+    },
+    "MenuOrderManager": {
+      "nLevel": 2
+    },
+    "BackgroundTask": {
+      "nLevel": 2
+    },
+    "d2md_banapresso_select_simple_order": {
+      "nLevel": 1
+    },
+    "Point2MainVC_giveGift_disable": {
+      "nLevel": 1
+    },
+    "MenuItemMainVC_bNeedProgress": {
+      "nLevel": 1,
+      "desc": "230320 매번 Progress 호출하는게 안좋아보여서 수정"
+    },
+    "CalculationAlgorithm_check_recipe": {
+      "nLevel": 0,
+      "desc": "N+1이벤트 조합 레시피 변경용"
+    },
+    "HomeVC_bViewLabelQR": {
+      "nLevel": 1,
+      "desc": "[ v2.03.41 >= ]홈>라벨QR스캔 버튼 초기 표시 여부"
+    },
+    "bUseCardScan": {
+      "nLevel": 0,
+      "desc": "[ v2.03.42 >= ] 카드스캔 기능 사용 여부"
+    },
+    "bUseSearchKeywordPoi": {
+      "nLevel": 1,
+      "desc": "[ v2.03.44 >= ] 배달주문>키워드검색으로 POI가져오기 여부"
+    },
+    "MenuOrderContentsVC_sSaleTodayErrDefaultMent": {
+      "nLevel": 1,
+      "sMsg": "안녕하세요 고객님, 내부 사정으로 인해 영업이 잠시 중단되었습니다.\n이용에 불편 드려 죄송합니다.\n빠른 시간 내에 재개하겠습니다.",
+      "desc": "[ v2.03.46 >= ] 주문확인 sale_today nAction == 1인데 sMsg 내용이 없을때 여기 sMsg 출력"
+    },
+    "bUseShotMent": {
+      "nLevel": 1,
+      "desc": "[ v2.03.46 >= ] '샷양' 이 포함된 옵션에 문구 추가"
+    },
+    "bUseAffiliateCoupon": {
+      "nLevel": 1,
+      "desc": "[ v2.03.46 >= ] 제휴사 쿠폰 기능 사용 여부"
+    },
+    "bUseBonusPayPoint": {
+      "nLevel": 1,
+      "desc": "[ v2.03.46 >= ] 충전포인트(보너스) 기능 사용 여부"
+    },
+    "bNotUseAffiliateCoupon": {
+      "nLevel": 0,
+      "desc": "[ v2.03.46 >= ] 제휴사 쿠폰 기능 사용 여부"
+    },
+    "bNotUseBonusPayPoint": {
+      "nLevel": 0,
+      "desc": "[ v2.03.46 >= ] 충전포인트(보너스) 기능 사용 여부"
+    },
+    "bNotUseShotMent": {
+      "nLevel": 0,
+      "desc": "[ v2.03.46 >= ] '샷양' 이 포함된 옵션에 문구 추가"
+    },
+    "bUseGiveGift": {
+      "nLevel": 1,
+      "desc": "[ v2.03.71(2) >= ] 포인트 > 상품권 선물하기 기능 표시"
+    },
+    "bUseLabelFortune": {
+      "nLevel": 1,
+      "desc": "[ v2.03.83 >= ] 240626 오늘의 운세 고도화 > 라벨지 출력 문구 선택 표시 여부"
+    },
+    "TestPhoneNums": {
+      "nLevel": 1,
+      "desc": "[ v2.03.63 >= ] Floating테스트 버튼 표시",
+      "list": {
+        "1234012": "ALL",
+        "_1234012": "BADGE_NAVIGATION,LOGOUT,HIDE",
+        "01026804249": "BADGE_NAVIGATION,LOGOUT,HIDE",
+        "01025870310": "ALL",
+        "01099314249": "ALL"
+      }
+    }
+  }
+}
